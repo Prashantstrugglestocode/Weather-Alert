@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Notifier</title>
+</head>
+<body>
+    <h1>Weather Notifier</h1>
+
+    <h2>Register for Daily Weather Reports</h2>
+    <form action="/register/" method="post">
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>City: <input type="text" name="city" required></label><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Registered Users</h2>
+    <ul>
+    {% for user in users %}
+        <li>{{ user.email }} - {{ user.city }} at {{ user.report_time.strftime('%H:%M') }} <a href="/send_report/{{ user.id }}">Send Report Now</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

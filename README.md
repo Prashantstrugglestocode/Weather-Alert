@@ -1,5 +1,5 @@
 
-```markdown
+```
 WeatherNotifier
 
 WeatherNotifier is a FastAPI-based web application that sends daily weather reports to registered users. The application uses PostgreSQL for database management and integrates with the OpenWeatherMap API to fetch weather data.
@@ -22,7 +22,7 @@ WeatherNotifier is a FastAPI-based web application that sends daily weather repo
 
  Setup and Installation
 
-
+```
 
 ## Setup and Installation
 

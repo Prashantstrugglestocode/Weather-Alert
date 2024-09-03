@@ -1,26 +1,28 @@
 
 ```markdown
-# WeatherNotifier
+WeatherNotifier
 
 WeatherNotifier is a FastAPI-based web application that sends daily weather reports to registered users. The application uses PostgreSQL for database management and integrates with the OpenWeatherMap API to fetch weather data.
 
-## Features
+ Features
 
 - User registration with email and city.
 - Daily weather report sent via email.
 - Easy-to-use web interface with FastAPI and Jinja2Templates.
 
-## Technologies Used
+ Technologies Used
 
-- **FastAPI**: Web framework for building the API.
-- **Jinja2**: Templating engine for HTML rendering.
-- **SQLAlchemy**: ORM for database interactions.
-- **PostgreSQL**: Database management system.
-- **SMTP**: Email sending protocol.
-- **OpenWeatherMap API**: Weather data provider.
-- **Google Geocoding API**: Geolocation data provider.
+- FastAPI: Web framework for building the API.
+- Jinja2: Templating engine for HTML rendering.
+- SQLAlchemy: ORM for database interactions.
+- PostgreSQL: Database management system.
+- SMTP: Email sending protocol.
+- OpenWeatherMap API: Weather data provider.
+- Google Geocoding API: Geolocation data provider.
 
-## Setup and Installation
+ Setup and Installation
+
+
 
 1. **Clone the Repository**
 

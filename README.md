@@ -1,4 +1,3 @@
-Here's a sample `README.md` file for your GitHub repository that outlines your project, its setup, and how to use it:
 
 ```markdown
 # WeatherNotifier
@@ -99,4 +98,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or issues, please contact me at mishraprashant62@yahoo.in.
 ```
 
-Make sure to adjust the repository URL, license, and contact details as needed. If you have any additional instructions or custom setup steps, be sure to include those as well.
+Feel free to modify the repository URL, license, and contact details according to your needs. If you need to add any additional setup or instructions, you can include them in the relevant sections.

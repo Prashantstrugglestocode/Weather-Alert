@@ -24,6 +24,8 @@ WeatherNotifier is a FastAPI-based web application that sends daily weather repo
 
 
 
+## Setup and Installation
+
 1. **Clone the Repository**
 
    ```bash
@@ -44,60 +46,43 @@ WeatherNotifier is a FastAPI-based web application that sends daily weather repo
    pip install -r requirements.txt
    ```
 
-4. **Set Up Environment Variables**
+4. **Configure Environment Variables**
 
    Create a `.env` file in the root directory and add the following variables:
 
-   ```plaintext
-   DATABASE_URL=your_database_url
-   SMTP_SERVER=your_smtp_server
-   SMTP_PORT=your_smtp_port
-   EMAIL_USER=your_email
+   ```env
+   SMTP_SERVER=smtp.mail.yahoo.com
+   SMTP_PORT=587
+   EMAIL_USER=your_email@yahoo.com
    EMAIL_PASSWORD=your_email_password
-   WEATHER_API_KEY=your_weather_api_key
-   GEOCODING_API_KEY=your_geocoding_api_key
+   WEATHER_API_KEY=your_openweathermap_api_key
+   GEOCODING_API_KEY=your_google_geocoding_api_key
    ```
 
-5. **Run Database Migrations**
-
-   Ensure the database tables are created:
-
-   ```bash
-   alembic upgrade head
-   ```
-
-6. **Run the Application**
+5. **Run the Application**
 
    ```bash
    uvicorn app.main:app --reload
    ```
 
-   The application will be available at `http://127.0.0.1:8000`.
+6. **Access the Application**
+
+   Open your browser and navigate to `http://127.0.0.1:8000`.
 
 ## Usage
 
-- **Register a New User**
-
-  POST request to `/register/` with form data:
-  
-  - `email`: User's email address.
-  - `city`: City for weather reports.
-
-- **Send Weather Report**
-
-  GET request to `/send_report/{user_id}` to manually trigger a weather report for a user.
+- **Register a User**: Go to the home page and register with your email and city.
+- **Receive Weather Reports**: Registered users will receive daily weather reports via email.
 
 ## Contributing
 
-Feel free to submit pull requests or open issues if you find any bugs or have suggestions for improvements.
+Feel free to open issues or submit pull requests to contribute to the development of WeatherNotifier.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or issues, please contact me at mishraprashant62@yahoo.in.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-Feel free to modify the repository URL, license, and contact details according to your needs. If you need to add any additional setup or instructions, you can include them in the relevant sections.
+
+
+
